@@ -13,28 +13,42 @@ html,body{
     height: 100%;
     width: 100%;
 }
-#main{
-    height: 300px;
-    width: 300px;
-    margin: 25px;
-    background-color: violet;
-    position: relative;
-    overflow: hidden;
-}
-#main img{
+main{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 0.5fr 0.5fr;
+    grid-template-areas: "header header header"
+                         "section section section"
+                         "div1 bootomup div2"
+                         "div1 bootomdown div2"
+                         ;
 }
-#main #main2{
-    height: 30%;
-    width: 100%;
-    background: linear-gradient(transparent, black);
-    position: absolute;
-    bottom: -30%;
-    transition: all ease 0.7s;
+header{
+    background-color: violet;
+    grid-area: header;
 }
-#main:hover #main2{
-   bottom: 0%;
+section{
+    background-color: rgb(247, 219, 6);
+    grid-area: section;
+}
+.div1{
+    background-color: lightskyblue;
+    grid-area: div1;
+}
 
+.div2{
+    background-color: rgb(29, 239, 10);
+    grid-area:  div2;
 }
+.bootomup{
+ background-color: rgb(41, 10, 239);
+    grid-area:  bootomup ;
+}
+.bootomup{
+ background-color: rgb(159, 10, 239);
+    grid-area:  bootomdown ;
+}
+
