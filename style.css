@@ -1,0 +1,40 @@
+@font-face {
+    font-family: hell;
+    src: url(Keithor\ Demo.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: hell;
+     background-color: rgb(234, 230, 230);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 300px;
+    width: 300px;
+    margin: 25px;
+    background-color: violet;
+    position: relative;
+    overflow: hidden;
+}
+#main img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#main #main2{
+    height: 30%;
+    width: 100%;
+    background: linear-gradient(transparent, black);
+    position: absolute;
+    bottom: -30%;
+    transition: all ease 0.7s;
+}
+#main:hover #main2{
+   bottom: 0%;
+
+}
