@@ -18,37 +18,41 @@ main{
     width: 100%;
     background-color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 1fr 0.5fr 0.5fr;
-    grid-template-areas: "header header header"
-                         "section section section"
-                         "div1 bootomup div2"
-                         "div1 bootomdown div2"
-                         ;
+    grid-template-columns: 1fr 1.5fr 0.6fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    grid-template-areas: "lefttop topc topl"
+                         "lefttop middlec rightm" 
+                         "downr downc downc" 
+    
+    ;
 }
-header{
-    background-color: violet;
-    grid-area: header;
+#lefttop{
+    background-color: crimson;
+    grid-area: lefttop;
 }
-section{
-    background-color: rgb(247, 219, 6);
-    grid-area: section;
+#topc{
+    background-color: rgb(30, 20, 220);
+    grid-area: topc;
 }
-.div1{
-    background-color: lightskyblue;
-    grid-area: div1;
+#topl{
+    background-color: rgb(53, 220, 20);
+    grid-area: topl;
 }
-
-.div2{
-    background-color: rgb(29, 239, 10);
-    grid-area:  div2;
+#middlec{
+    background-color: rgb(200, 220, 20);
+    grid-area: middlec;
 }
-.bootomup{
- background-color: rgb(41, 10, 239);
-    grid-area:  bootomup ;
+#rightm{
+    background-color: rgb(220, 20, 220);
+    grid-area: rightm;
+ 
 }
-.bootomup{
- background-color: rgb(159, 10, 239);
-    grid-area:  bootomdown ;
+#downr{
+    background-color: rgb(20, 220, 190);
+    grid-area: downr;
+}
+#downc{
+    background-color: rgb(20, 220, 133);
+    grid-area: downc;
 }
 
