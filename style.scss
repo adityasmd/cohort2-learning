@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(85, 83, 83);
+    display: flex;
+   gap: 20px;
+      div {
+    flex-grow: 1;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid white;
+    transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  div:hover{
+    flex-grow: 3;
+  }
+
+    #div1{
+       
+        background-image: url(https://i.pinimg.com/736x/16/ad/fa/16adfa0b19dbaab2c7dabb995244d9d5.jpg);
+    }
+    #div2{
+       
+        background-image: url(https://i.pinimg.com/736x/6a/87/7c/6a877c69f2c12fe1ba8af8861c4915e4.jpg);
+    }
+    #div3{
+       
+        background-image: url(https://i.pinimg.com/736x/61/0d/b8/610db82d3203285461634701ff18e18d.jpg);
+    }
+    #div4{
+        
+        background-image: url(https://i.pinimg.com/736x/99/bf/0f/99bf0fc3d3d6e252426aa16d4035d5bb.jpg);
+    }
+    #div5{
+       
+        background-image: url(https://i.pinimg.com/1200x/9b/e2/69/9be269125d7d639d29ad57ce10caede7.jpg);
+    }
+}

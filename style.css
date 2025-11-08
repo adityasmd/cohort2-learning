@@ -1,72 +1,44 @@
-@font-face {
-    font-family: hell;
-    src: url(Keithor\ Demo.ttf);
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-     
-}
-html,body{
-    height: 100%;
-    width: 100%;
-      background: red;
-}
-main{
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr;
-    grid-template-rows: 50px 1fr 1fr;
-    grid-template-areas: "header  header header"
-               "cl cr cr"
-               "dl dr drr";
-    
-    padding: 20px;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    background-color: crimson;
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-}
-header a{
-    text-decoration: none;
-}
-#cl{
-    background-color: darkcyan;
-    grid-area: cl;
-    
-}
-#cl img{
-  
-    object-fit: cover;
-    object-position: center
-    
-}
-#cr{
-    background-color: darkmagenta;
-    grid-area: cr;
-}
-#dl{
-    background-color: lightskyblue;
-    grid-area: dl;
-}
-#dr{
-    background-color: rgb(9, 9, 252);
-    grid-area: dr;
-}
-#drr{
-    background-color: white;
-    grid-area: drr;
+html, body {
+  height: 100%;
+  width: 100%;
 }
 
-
-
-
-
+main {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(85, 83, 83);
+  display: flex;
+  gap: 20px;
+}
+main div {
+  flex-grow: 1;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid white;
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+main div:hover {
+  flex-grow: 3;
+}
+main #div1 {
+  background-image: url(https://i.pinimg.com/736x/16/ad/fa/16adfa0b19dbaab2c7dabb995244d9d5.jpg);
+}
+main #div2 {
+  background-image: url(https://i.pinimg.com/736x/6a/87/7c/6a877c69f2c12fe1ba8af8861c4915e4.jpg);
+}
+main #div3 {
+  background-image: url(https://i.pinimg.com/736x/61/0d/b8/610db82d3203285461634701ff18e18d.jpg);
+}
+main #div4 {
+  background-image: url(https://i.pinimg.com/736x/99/bf/0f/99bf0fc3d3d6e252426aa16d4035d5bb.jpg);
+}
+main #div5 {
+  background-image: url(https://i.pinimg.com/1200x/9b/e2/69/9be269125d7d639d29ad57ce10caede7.jpg);
+}/*# sourceMappingURL=style.css.map */
