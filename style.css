@@ -6,53 +6,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: hell;
-     background-color: rgb(234, 230, 230);
+     
 }
 html,body{
     height: 100%;
     width: 100%;
+      background: red;
 }
 main{
     height: 100%;
     width: 100%;
     background-color: black;
     display: grid;
-    grid-template-columns: 1fr 1.5fr 0.6fr;
-    grid-template-rows: 1fr 1.5fr 1fr;
-    grid-template-areas: "lefttop topc topl"
-                         "lefttop middlec rightm" 
-                         "downr downc downc" 
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-areas: "header  header header"
+               "cl cr cr"
+               "dl dr drr";
     
-    ;
+    padding: 20px;
+
 }
-#lefttop{
+
+header{
     background-color: crimson;
-    grid-area: lefttop;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
 }
-#topc{
-    background-color: rgb(30, 20, 220);
-    grid-area: topc;
+header a{
+    text-decoration: none;
 }
-#topl{
-    background-color: rgb(53, 220, 20);
-    grid-area: topl;
+#cl{
+    background-color: darkcyan;
+    grid-area: cl;
+    
 }
-#middlec{
-    background-color: rgb(200, 220, 20);
-    grid-area: middlec;
+#cl img{
+  
+    object-fit: cover;
+    object-position: center
+    
 }
-#rightm{
-    background-color: rgb(220, 20, 220);
-    grid-area: rightm;
- 
+#cr{
+    background-color: darkmagenta;
+    grid-area: cr;
 }
-#downr{
-    background-color: rgb(20, 220, 190);
-    grid-area: downr;
+#dl{
+    background-color: lightskyblue;
+    grid-area: dl;
 }
-#downc{
-    background-color: rgb(20, 220, 133);
-    grid-area: downc;
+#dr{
+    background-color: rgb(9, 9, 252);
+    grid-area: dr;
 }
+#drr{
+    background-color: white;
+    grid-area: drr;
+}
+
+
+
+
 
