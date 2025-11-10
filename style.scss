@@ -119,6 +119,48 @@ main{
    }
    
    }
+
+    section#page4{
+    @include flex-gap(1rem);
+    padding: 1rem;
+
+    #down2 img{
+        width: 100%;
+        border-radius: 1rem;
+        
+    }
+    
+    .bottom2{
+        @include flex-gap(4rem);
+        padding: 1rem;
+        background-color: #1E1E1E;
+        border-radius: 1rem;
+    }
+    .down2{
+        width: 100%;
+
+        img{
+            width: 100%;
+        }
+
+    }
+    
+        .text2{
+     @include flex-gap(0.8rem);
+
+     h4{
+        font-size: 3rem;
+        font-weight: 200;
+     }
+     .paragraph1{
+        font-size: 1.3rem;
+        font-weight: 100;
+        opacity: 0.5;
+     }
+    
+   }
+   
+   }
 }
 
 
@@ -159,5 +201,24 @@ main{
                 gap: 1rem;
             }
    }
+section#page4{
+    flex-direction: row;
+
+    .down2,.bottom2{
+        width: 50%;
+
+       
+    }
+     .bottom2{
+            justify-content: space-between;
+            padding: 3rem;
+        }
+        
+           .paragraph1{
+                display: flex;
+                gap: 1rem;
+            }
+   }
+  
     }
 }
