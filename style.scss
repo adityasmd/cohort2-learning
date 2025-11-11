@@ -27,6 +27,7 @@ main{
         @include flex-gap(1rem);
         padding: 1rem;
         
+        
       
 
         #top img{
@@ -35,8 +36,8 @@ main{
         }
         #bottom{
               background-color: #1E1E1E;
-              @include flex-gap(2.9rem);
-              padding: 1.5rem;
+              @include flex-gap(2rem);
+              padding: 2.8rem;
               border-radius: 1rem;
              
             
@@ -45,11 +46,11 @@ main{
                 
                
                 h4{
-                    font-size: 2.2rem;
+                    font-size: 4.7rem;
                     font-weight: 100;
                 }
                 p{
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                     opacity: 0.4;
                     line-height: 2.1rem;
                 }
@@ -161,6 +162,114 @@ main{
    }
    
    }
+
+   section#page5{
+    width: 100%;
+    @include flex-gap(2rem);
+    padding: 1rem;
+
+    .card{
+        border-radius: 0.7rem;
+        width: 100%;
+        background-image: url(responsive4.png);
+        aspect-ratio: 1/1;
+        background-size: cover;
+
+        @include flex-gap();
+        justify-content: space-between;
+        padding: 1rem;
+        
+
+        .icon,.bottom3{
+            background-color: rgba(216, 186, 186, 0.118);
+            backdrop-filter: blur(5px);
+            border-radius: 0.3rem;
+            padding: 1rem;
+           
+        }
+         .top3{
+            display: flex;
+            gap: 0.6rem;
+            justify-content: flex-end;
+        }
+        .icon{
+            width: fit-content;
+            border-radius: 50%;
+        }
+        .bottom3{
+           display: flex;
+           justify-content: space-between;
+        }
+         
+    }
+        .card2{
+        border-radius: 0.7rem;
+        width: 100%;
+        background-image: url(responsive.png);
+        aspect-ratio: 1/1;
+        background-size: cover;
+        @include flex-gap();
+        justify-content: space-between;
+        padding: 1rem;
+
+         .icon1,.bottom4{
+            background-color: rgba(216, 186, 186, 0.118);
+            backdrop-filter: blur(5px);
+            border-radius: 0.3rem;
+            padding: 1rem;
+           
+        }
+         .top4{
+            display: flex;
+            gap: 0.6rem;
+            justify-content: flex-end;
+        }
+        .icon1{
+            width: fit-content;
+            border-radius: 50%;
+        }
+        .bottom4{
+           display: flex;
+           justify-content: space-between;
+        }
+
+        }
+       
+        .card3{
+        border-radius: 0.7rem;
+        width: 100%;
+        background-image: url(responsive5.png);
+        aspect-ratio: 1/1;
+        background-size: cover;
+        @include flex-gap();
+        justify-content: space-between;
+        padding: 1rem;
+
+         .icon2,.bottom5{
+            background-color: rgba(216, 186, 186, 0.118);
+            backdrop-filter: blur(5px);
+            border-radius: 0.3rem;
+            padding: 1rem;
+           
+        }
+         .top5{
+            display: flex;
+            gap: 0.6rem;
+            justify-content: flex-end;
+        }
+        .icon2{
+            width: fit-content;
+            border-radius: 50%;
+        }
+        .bottom5{
+           display: flex;
+           justify-content: space-between;
+        }
+
+        }
+       
+
+   }
 }
 
 
@@ -220,5 +329,9 @@ section#page4{
             }
    }
   
+   section#page5{
+    display: flex;
+    flex-direction: row;
+   }
     }
 }
