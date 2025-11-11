@@ -252,6 +252,39 @@ main section#page5 .card3 .bottom5 {
   display: flex;
   justify-content: space-between;
 }
+main section#end1 {
+  width: 100%;
+  padding: 0.6rem;
+}
+main section#end1 .e1 {
+  color: #1E1E1E;
+  font-size: 2rem;
+  width: 100%;
+  background-color: #CEBD63;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  border-radius: 1rem;
+  padding: 1.3rem;
+  font-weight: 100;
+}
+main section#end1 .e1 p {
+  font-size: 1.5rem;
+}
+main section#end1 .e1 h3 {
+  font-size: 2.6rem;
+  font-weight: 200;
+}
+main section#end1 .e1 button {
+  width: 90%;
+  font-size: 1rem;
+  padding: 1rem;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+}
 
 @media (min-width: 900px) {
   main {
@@ -301,5 +334,30 @@ main section#page5 .card3 .bottom5 {
   main section#page5 {
     display: flex;
     flex-direction: row;
+  }
+  main section#end1 {
+    display: flex;
+    width: 100%;
+    background-color: #ccbc64;
+    justify-content: space-around;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  main section#end1 .e1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  main section#end1 .e1 p {
+    font-size: 2rem;
+  }
+  main section#end1 .e1 h3 {
+    font-size: 4rem;
+  }
+  main section#end1 .e1 .t1 {
+    width: 12%;
+    display: flex;
+    justify-content: flex-end;
   }
 }/*# sourceMappingURL=style.css.map */
